@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My App</title>
+	<link rel="stylesheet" type="text/css" href="../static/main.css">
+</head>
+<body>
+	
+	<div class="container">
+		<h1>
+			Height Collection 
+		</h1>
+		<h3>
+			Please fill in the details of you Email and Height  
+		</h3>
+		<div class="message">
+			{{ text | safe}}
+		</div>
+	 	<form action = "{{url_for('success')}}" method="POST">
+	 		<input type="email" name="email_name" placeholder="Email Address please.." required> <br>
+	 		 <input type="number" min="50" max="300"  name="height" placeholder="Height in centimeter.." required> <br>
+	 		<button type="Submit">Submit</button> 
+	 	</form>
+	 </div>
+</body>
+</html>

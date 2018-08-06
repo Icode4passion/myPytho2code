@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my state details</title>
+</head>
+<body>
+<table border="1">
+		<tr>
+			<th>State</th>
+			<th>Captial</th>
+		</tr>
+
+	{%  for key , value in details.iteritems() %}
+		<tr>
+			<td>{{ key }}</td>
+			<td>{{ value }}</td>
+		</tr>
+	{% endfor %}
+</table>
+</body>
+</html>

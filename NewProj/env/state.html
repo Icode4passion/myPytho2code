@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my state details</title>
+</head>
+<body>
+<table>
+	{%  for key , value in results.iteritems() %}
+		<tr>
+			<th>{{ key }}</th>
+			<tr>{{ value }}</tr>
+	{% endfor %}
+</table>
+</body>
+</html>
